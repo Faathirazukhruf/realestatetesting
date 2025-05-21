@@ -16,7 +16,10 @@ import ApartmentIcon from "@mui/icons-material/Apartment";
 import LocationCityIcon from "@mui/icons-material/LocationCity";
 import Client from "./Clients/Index";
 import "./Index.scss";
+import "./TopSection.scss";
 import { useState } from "react";
+import Carousel from "../Carousel";
+import WalletConnect from "../WalletConnect";
 
 const propertyOptions = [
   {
@@ -56,7 +59,10 @@ function Home() {
 
   return (
     <div className="hm-pg">
-      {/* <img src={backgroundImage} alt="background" /> */}
+      <div className="top-section">
+        <WalletConnect />
+        <Carousel />
+      </div>
       <img src="/assets/image/background.webp" alt="bg" className="hm-img" />
       <div className="home">
         <Box className="homebox">
